@@ -6,13 +6,9 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Osama Iqbal/Documents/UT/Current Semester/EE 312/CodeCamp/CodeCamp.c
+C:/Users/Osama Iqbal/Documents/UT/Current Semester/EE 312/Git/CodeCamp/CodeCampTester.c
 stdio.h
 -
-stdlib.h
--
 stdbool.h
--
-limits.h
 -
 

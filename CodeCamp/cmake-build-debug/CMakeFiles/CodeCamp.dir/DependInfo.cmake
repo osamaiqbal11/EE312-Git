@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/Osama Iqbal/Documents/UT/Current Semester/EE 312/CodeCamp/CodeCamp.c" "C:/Users/Osama Iqbal/Documents/UT/Current Semester/EE 312/CodeCamp/cmake-build-debug/CMakeFiles/CodeCamp.dir/CodeCamp.c.obj"
-  "C:/Users/Osama Iqbal/Documents/UT/Current Semester/EE 312/CodeCamp/CodeCampTester.c" "C:/Users/Osama Iqbal/Documents/UT/Current Semester/EE 312/CodeCamp/cmake-build-debug/CMakeFiles/CodeCamp.dir/CodeCampTester.c.obj"
+  "C:/Users/Osama Iqbal/Documents/UT/Current Semester/EE 312/Git/CodeCamp/CodeCamp.c" "C:/Users/Osama Iqbal/Documents/UT/Current Semester/EE 312/Git/CodeCamp/cmake-build-debug/CMakeFiles/CodeCamp.dir/CodeCamp.c.obj"
+  "C:/Users/Osama Iqbal/Documents/UT/Current Semester/EE 312/Git/CodeCamp/CodeCampTester.c" "C:/Users/Osama Iqbal/Documents/UT/Current Semester/EE 312/Git/CodeCamp/cmake-build-debug/CMakeFiles/CodeCamp.dir/CodeCampTester.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
