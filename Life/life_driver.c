@@ -36,7 +36,7 @@ int main(int argc, char *argv[]) {
 
    //edit these two lines and use the command line arguments
 
-   char fName[] = "world.txt";
+   char fName[] = "0";
    strcpy(fName, argv[1]);
    int Gens = atoi(argv[2]);
    const int numGenerations  = Gens; //set to a smaller number for debugging
