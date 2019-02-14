@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/Osama Iqbal/Documents/UT/Current Semester/EE 312/Life/life.c" "C:/Users/Osama Iqbal/Documents/UT/Current Semester/EE 312/Life/cmake-build-debug/CMakeFiles/Life.dir/life.c.obj"
-  "C:/Users/Osama Iqbal/Documents/UT/Current Semester/EE 312/Life/life_driver.c" "C:/Users/Osama Iqbal/Documents/UT/Current Semester/EE 312/Life/cmake-build-debug/CMakeFiles/Life.dir/life_driver.c.obj"
+  "C:/Users/Osama Iqbal/Documents/UT/Current Semester/EE 312/Git/Life/life.c" "C:/Users/Osama Iqbal/Documents/UT/Current Semester/EE 312/Git/Life/cmake-build-debug/CMakeFiles/Life.dir/life.c.obj"
+  "C:/Users/Osama Iqbal/Documents/UT/Current Semester/EE 312/Git/Life/life_driver.c" "C:/Users/Osama Iqbal/Documents/UT/Current Semester/EE 312/Git/Life/cmake-build-debug/CMakeFiles/Life.dir/life_driver.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

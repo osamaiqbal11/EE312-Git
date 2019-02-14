@@ -42,10 +42,10 @@ RM = "C:\Program Files\JetBrains\CLion 2018.3.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Osama Iqbal\Documents\UT\Current Semester\EE 312\Life"
+CMAKE_SOURCE_DIR = "C:\Users\Osama Iqbal\Documents\UT\Current Semester\EE 312\Git\Life"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Osama Iqbal\Documents\UT\Current Semester\EE 312\Life\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\Osama Iqbal\Documents\UT\Current Semester\EE 312\Git\Life\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Life.dir/depend.make
@@ -59,30 +59,30 @@ include CMakeFiles/Life.dir/flags.make
 CMakeFiles/Life.dir/life.c.obj: CMakeFiles/Life.dir/flags.make
 CMakeFiles/Life.dir/life.c.obj: CMakeFiles/Life.dir/includes_C.rsp
 CMakeFiles/Life.dir/life.c.obj: ../life.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Osama Iqbal\Documents\UT\Current Semester\EE 312\Life\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Life.dir/life.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Life.dir\life.c.obj   -c "C:\Users\Osama Iqbal\Documents\UT\Current Semester\EE 312\Life\life.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Osama Iqbal\Documents\UT\Current Semester\EE 312\Git\Life\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Life.dir/life.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Life.dir\life.c.obj   -c "C:\Users\Osama Iqbal\Documents\UT\Current Semester\EE 312\Git\Life\life.c"
 
 CMakeFiles/Life.dir/life.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Life.dir/life.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Osama Iqbal\Documents\UT\Current Semester\EE 312\Life\life.c" > CMakeFiles\Life.dir\life.c.i
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Osama Iqbal\Documents\UT\Current Semester\EE 312\Git\Life\life.c" > CMakeFiles\Life.dir\life.c.i
 
 CMakeFiles/Life.dir/life.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Life.dir/life.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Osama Iqbal\Documents\UT\Current Semester\EE 312\Life\life.c" -o CMakeFiles\Life.dir\life.c.s
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Osama Iqbal\Documents\UT\Current Semester\EE 312\Git\Life\life.c" -o CMakeFiles\Life.dir\life.c.s
 
 CMakeFiles/Life.dir/life_driver.c.obj: CMakeFiles/Life.dir/flags.make
 CMakeFiles/Life.dir/life_driver.c.obj: CMakeFiles/Life.dir/includes_C.rsp
 CMakeFiles/Life.dir/life_driver.c.obj: ../life_driver.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Osama Iqbal\Documents\UT\Current Semester\EE 312\Life\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Life.dir/life_driver.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Life.dir\life_driver.c.obj   -c "C:\Users\Osama Iqbal\Documents\UT\Current Semester\EE 312\Life\life_driver.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Osama Iqbal\Documents\UT\Current Semester\EE 312\Git\Life\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Life.dir/life_driver.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Life.dir\life_driver.c.obj   -c "C:\Users\Osama Iqbal\Documents\UT\Current Semester\EE 312\Git\Life\life_driver.c"
 
 CMakeFiles/Life.dir/life_driver.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Life.dir/life_driver.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Osama Iqbal\Documents\UT\Current Semester\EE 312\Life\life_driver.c" > CMakeFiles\Life.dir\life_driver.c.i
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Osama Iqbal\Documents\UT\Current Semester\EE 312\Git\Life\life_driver.c" > CMakeFiles\Life.dir\life_driver.c.i
 
 CMakeFiles/Life.dir/life_driver.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Life.dir/life_driver.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Osama Iqbal\Documents\UT\Current Semester\EE 312\Life\life_driver.c" -o CMakeFiles\Life.dir\life_driver.c.s
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Osama Iqbal\Documents\UT\Current Semester\EE 312\Git\Life\life_driver.c" -o CMakeFiles\Life.dir\life_driver.c.s
 
 # Object files for target Life
 Life_OBJECTS = \
@@ -98,7 +98,7 @@ Life.exe: CMakeFiles/Life.dir/build.make
 Life.exe: CMakeFiles/Life.dir/linklibs.rsp
 Life.exe: CMakeFiles/Life.dir/objects1.rsp
 Life.exe: CMakeFiles/Life.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Osama Iqbal\Documents\UT\Current Semester\EE 312\Life\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable Life.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Osama Iqbal\Documents\UT\Current Semester\EE 312\Git\Life\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable Life.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Life.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -111,6 +111,6 @@ CMakeFiles/Life.dir/clean:
 .PHONY : CMakeFiles/Life.dir/clean
 
 CMakeFiles/Life.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Osama Iqbal\Documents\UT\Current Semester\EE 312\Life" "C:\Users\Osama Iqbal\Documents\UT\Current Semester\EE 312\Life" "C:\Users\Osama Iqbal\Documents\UT\Current Semester\EE 312\Life\cmake-build-debug" "C:\Users\Osama Iqbal\Documents\UT\Current Semester\EE 312\Life\cmake-build-debug" "C:\Users\Osama Iqbal\Documents\UT\Current Semester\EE 312\Life\cmake-build-debug\CMakeFiles\Life.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Osama Iqbal\Documents\UT\Current Semester\EE 312\Git\Life" "C:\Users\Osama Iqbal\Documents\UT\Current Semester\EE 312\Git\Life" "C:\Users\Osama Iqbal\Documents\UT\Current Semester\EE 312\Git\Life\cmake-build-debug" "C:\Users\Osama Iqbal\Documents\UT\Current Semester\EE 312\Git\Life\cmake-build-debug" "C:\Users\Osama Iqbal\Documents\UT\Current Semester\EE 312\Git\Life\cmake-build-debug\CMakeFiles\Life.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/Life.dir/depend
 

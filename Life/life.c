@@ -9,8 +9,10 @@ void populateWorld(char fname[], char *grid[], int *numRows, int *numCols){
     ptrtoGrid = fopen(fname, "r");
 
     if (ptrtoGrid == NULL) {
-        printf("you're a fuck up!\n");
-        exit(-1);
+        for(int j=0; j < 20; j++) {
+            printf("you're a fuck up!\n");
+        }
+            exit(-1);
     }
     else {
         printf("success!\n");
@@ -19,9 +21,8 @@ void populateWorld(char fname[], char *grid[], int *numRows, int *numCols){
     char buf[BUFSIZ];
     *numCols=0;
     //numRows=strlen(buf);
-
+    int i=0;
     while (fgets(buf, sizeof(buf),ptrtoGrid)){
-        int i=0;
         grid[i] =(char *) malloc(strlen(buf));
         strcpy(grid[i], buf);
         printf("%s", grid[i]);
