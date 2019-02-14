@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Osama Iqbal/Documents/UT/Current Semester/EE 312/Life/life.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+
