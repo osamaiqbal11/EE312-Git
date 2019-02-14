@@ -44,5 +44,9 @@ void showWorld(char *grid[], int numRows, int numCols){
 }
 
 void iterateGeneration(char *grid[], int numRows, int numCols){
-       
+    int i=0;
+    int j=0;
+    int whatisthere = grid[i][j];
+    whatisthere= whatisthere -48;
+    printf("\n%d\n", whatisthere);
 }

@@ -28,15 +28,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-
+#include <string.h>
 #include "life.h"
 
 
 int main(int argc, char *argv[]) {
 
    //edit these two lines and use the command line arguments
+
    char fName[] = "world.txt";
-   const int numGenerations  = 0; //set to a smaller number for debugging
+   strcpy(fName, argv[1]);
+   int Gens = atoi(argv[2]);
+   const int numGenerations  = Gens; //set to a smaller number for debugging
     
    const int MAX_ROWS = 80; //we want the world to fit on one screen
 
