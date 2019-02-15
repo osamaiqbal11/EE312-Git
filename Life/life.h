@@ -8,10 +8,10 @@
  * On my honor, <NAME>, this programming project is my own work
  * and I have not provided this code to any other student.
  *
- * Name:
- * email address:
- * UTEID:
- * Section 5 digit ID:
+ * Name: Osama Iqbal
+ * email address: osamaiqbal1127@gmail.com
+ * UTEID: oi723
+ * Section 5 digit ID:16030
  *
  *///
 // Created by priebe on 9/5/2018.

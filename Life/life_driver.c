@@ -15,7 +15,7 @@
  * Name: Osama Iqbal
  * email address: osamaiqbal1127@gmail.com
  * UTEID: oi723
- * Section 5 digit ID:
+ * Section 5 digit ID:16030
  *
  */
 
@@ -55,7 +55,7 @@ int main(int argc, char *argv[]) {
    for (int iteration = 0; iteration < numGenerations; iteration++) {
 
      // code to clear screen goes here
-
+     system("clear");
      iterateGeneration(world, numRows, numCols);
 
      showWorld(world, numRows, numCols);

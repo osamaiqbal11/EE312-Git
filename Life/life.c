@@ -7,17 +7,6 @@
 void populateWorld(char fname[], char *grid[], int *numRows, int *numCols){
     FILE *ptrtoGrid;
     ptrtoGrid = fopen(fname, "r");
-/*
-    if (ptrtoGrid == NULL) {
-        for(int j=0; j < 20; j++) {
-            printf("you're a fuck up!\n");
-        }
-            exit(-1);
-    }
-    else {
-        printf("success!\n");
-    }
-*/
     char buf[BUFSIZ];
     *numRows=0;
     int i=0;
@@ -30,44 +19,257 @@ void populateWorld(char fname[], char *grid[], int *numRows, int *numCols){
     }
     *numCols = strlen(grid[0]);
     *numCols = *numCols - 1;
-//printf("Columns = %d\nRows = %d\n", *numCols, *numRows);
-
+//    printf("populated");
 }
+
 
 void showWorld(char *grid[], int numRows, int numCols){
-
-
     int i= 0;
     int j= 0;
-//    printf("it's there ===%c\n", grid[i][j]);
     char letter = grid[i][j];
-    int intletter = grid[i][j];
-   while(i<numRows) {
-       intletter = grid[i][j];
-       if (intletter == 48)
-           printf(".");
-       if (intletter == 49)
-           printf("*");
-       j++;
+    char periodt = '.';
+    char asterisk = '*';
 
-       letter = grid[i][j];
-       int intletter = grid[i][j];
-//printf("it'sthere ===%c\n intletter ===%d", grid[i][j], intletter);
 
+    while(i<numRows) {
+        letter = grid[i][j];
+        if (letter == '0')
+            printf("%c", periodt);
+        if (letter == '1')
+            printf("%c", asterisk);
+        j++;
+
+        letter = grid[i][j];
         if (j == numCols) {
-           printf("%c", letter);
-           i++;
-           j = 0;
-           letter = grid[i][j];
-           int intletter = grid[i][j];
-       }
-   }
+            printf("%c", letter);
+            i++;
+            j = 0;
+        }
+    }
+//    printf("showed");
 }
 
-void iterateGeneration(char *grid[], int numRows, int numCols){
-    int i=0;
-    int j=0;
-    int whatisthere = grid[i][j];
-    whatisthere= whatisthere -48;
-   // printf("\n%d\n", whatisthere);
+void iterateGeneration(char *grid[], int numRows, int numCols) {
+    int i = 0;
+    int j = 0;
+    char *tempgrid[numRows];
+    while (i < numRows) {
+        tempgrid[i] = (char *) malloc(strlen(grid[i]));
+        strcpy(tempgrid[i], grid[i]);
+        i++;
+    }
+    int num[8];
+    int neighbors = 0;
+    int currentRow = 0;
+    int currentCol = 0;
+    int exitcond = 0;
+
+//    printf("countingneighbors");
+    //counting neighbors
+    while (exitcond != 1) {
+
+        //top row and top corners
+        if (currentRow == 0) {
+            //top left corner
+            if (currentCol == 0) {
+                num[0] = grid[currentRow][currentCol + 1];
+                if (num[0] == 49)
+                    neighbors++;
+                num[1] = grid[currentRow + 1][currentCol + 1];
+                if (num[1] == 49)
+                    neighbors++;
+                num[2] = grid[currentRow + 1][currentCol + 1];
+                if (num[2] == 49)
+                    neighbors++;
+            }
+            //top right corner
+            if (currentCol == (numCols - 1)) {
+                num[0] = grid[currentRow][currentCol - 1];
+                if (num[0] == 49)
+                    neighbors++;
+                num[1] = grid[currentRow + 1][currentCol - 1];
+                if (num[1] == 49)
+                    neighbors++;
+                num[2] = grid[currentRow + 1][currentCol];
+                if (num[2] == 49)
+                    neighbors++;
+            }
+            //the rest
+            // on the same row
+            else {
+                num[0] = grid[currentRow][currentCol - 1];
+                num[1] = grid[currentRow][currentCol + 1];
+                num[2] = grid[currentRow + 1][currentCol - 1];
+                num[3] = grid[currentRow + 1][currentCol];
+                num[4] = grid[currentRow + 1][currentCol + 1];
+                i = 0;
+                while (i < 5) {
+                    if (num[i] == 49)
+                        neighbors++;
+                    i++;
+                }
+            }
+        }
+        //bottom row and bottom corners
+        if (currentRow == (numRows - 1)) {
+            //bottom left corner
+            if (currentCol == 0) {
+                num[0] = grid[currentRow - 1][currentCol];
+                num[1] = grid[currentRow - 1][currentCol + 1];
+                num[2] = grid[currentRow][currentCol + 1];
+                if (num[0] == 49)
+                    neighbors++;
+                if (num[1] == 49)
+                    neighbors++;
+                if (num[2] == 49)
+                    neighbors++;
+            }
+            //bottom right corner
+            if (currentCol == (numCols - 1)) {
+                num[0] = grid[currentRow][currentCol - 1];
+                num[1] = grid[currentRow - 1][currentCol - 1];
+                num[2] = grid[currentRow - 1][currentCol];
+                if (num[0] == 49)
+                    neighbors++;
+                if (num[1] == 49)
+                    neighbors++;
+                if (num[2] == 49)
+                    neighbors++;
+            }
+                //the rest
+                //on the same row
+            if (0<currentCol){
+                if(currentCol<(numCols-1)) {
+                    num[0] = grid[currentRow][currentCol - 1];
+                    num[1] = grid[currentRow][currentCol + 1];
+                    num[2] = grid[currentRow - 1][currentCol - 1];
+                    num[3] = grid[currentRow - 1][currentCol];
+                    num[4] = grid[currentRow - 1][currentCol + 1];
+                    i = 0;
+                    while (i < 5) {
+                        if (num[i] == 49)
+                            neighbors++;
+                        i++;
+                    }
+                }
+            }
+        }
+
+        //left column
+        if (currentCol == 0) {
+            //no corners
+            if (currentRow == 0) {
+                j = 0;
+            }
+            if (currentRow == (numRows - 1)) {
+                j = 0;
+            }
+            //
+
+            else {
+                num[0] = grid[currentRow - 1][currentCol];
+                num[1] = grid[currentRow - 1][currentCol + 1];
+                num[2] = grid[currentRow][currentCol + 1];
+                num[3] = grid[currentRow + 1][currentCol + 1];
+                num[4] = grid[currentRow + 1][currentCol];
+                i = 0;
+                while (i < 5) {
+                    if (num[i] == 49)
+                        neighbors++;
+                    i++;
+                }
+            }
+        }
+        //right column
+        if (currentCol == (numCols - 1)) {
+            //no corners
+            if (currentRow == 0)
+                j = 0;
+            if (currentRow == (numRows - 1))
+                j = 0;
+            //
+            else {
+                num[0] = grid[currentRow - 1][currentCol];
+                num[1] = grid[currentRow - 1][currentCol - 1];
+                num[2] = grid[currentRow][currentCol - 1];
+                num[3] = grid[currentRow + 1][currentCol - 1];
+                num[4] = grid[currentRow +1][currentCol];
+
+                i = 0;
+                while (i < 5) {
+                    if (num[i] == 49)
+                        neighbors++;
+                    i++;
+                }
+            }
+        }
+        //everything else
+
+        if (0 < currentRow){
+            if (currentRow <(numRows -1)) {
+                if (0 < currentCol ) {
+                    if (currentCol < (numCols - 1)) {
+                        num[0] = grid[currentRow][currentCol - 1];
+                        num[1] = grid[currentRow - 1][currentCol - 1];
+                        num[2] = grid[currentRow - 1][currentCol];
+                        num[3] = grid[currentRow - 1][currentCol + 1];
+                        num[4] = grid[currentRow][currentCol + 1];
+                        num[5] = grid[currentRow + 1][currentCol + 1];
+                        num[6] = grid[currentRow + 1][currentCol];
+                        num[7] = grid[currentRow + 1][currentCol - 1];
+                        i = 0;
+                        while (i < 8) {
+                            if (num[i] == 49)
+                                neighbors++;
+                            i++;
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+        int currentnum = grid[currentRow][currentCol];
+        //enforcing rules updating tempgrid
+        if (currentnum == 48) {
+            if (neighbors == 3) {
+                tempgrid[currentRow][currentCol] = '1';
+            }
+        }
+        if (currentnum == 49) {
+            if (neighbors > 3) {
+                tempgrid[currentRow][currentCol] = '0';
+            }
+            if (neighbors < 2) {
+                tempgrid[currentRow][currentCol] = '0';
+            }
+        }
+        //
+        //iterate number
+        neighbors = 0;
+        currentCol++;
+        if (currentCol == numCols) {
+            currentRow++;
+            currentCol = 0;
+            if (currentRow == numRows)
+                exitcond = 1;
+        }
+
+    }
+//    printf("stringcopy");
+    //string copy
+    i = 0;
+    while (i < numRows) {
+        strcpy(grid[i], tempgrid[i]);
+        i++;
+    }
+//    printf("free");
+    //free
+    i = 0;
+    while (i < numRows) {
+        free(tempgrid[i]);
+        i++;
+    }
 }
+
