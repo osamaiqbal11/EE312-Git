@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Osama Iqbal/Documents/UT/Current Semester/EE 312/UtPod/Song.h
+
+C:/Users/Osama Iqbal/Documents/UT/Current Semester/EE 312/UtPod/UtPod.cpp
+cstdlib
+-
+iostream
+-
+UtPod.h
+C:/Users/Osama Iqbal/Documents/UT/Current Semester/EE 312/UtPod/UtPod.h
+time.h
+-
+
+C:/Users/Osama Iqbal/Documents/UT/Current Semester/EE 312/UtPod/UtPod.h
+Song.h
+C:/Users/Osama Iqbal/Documents/UT/Current Semester/EE 312/UtPod/Song.h
+
